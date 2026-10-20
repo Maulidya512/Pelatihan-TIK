@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasBeres - Jasa Rapikan & Format Tugas Sekolah</title>
+    <!-- Tailwind CSS via CDN untuk styling modern & responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* CSS Tambahan Kustom */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-indigo-600">TugasBeres</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#fitur" class="hover:text-indigo-600 transition">Keunggulan</a>
+                <a href="#kalkulator" class="hover:text-indigo-600 transition">Hitung Biaya</a>
+                <a href="#portofolio" class="hover:text-indigo-600 transition">Hasil Kerja</a>
+            </nav>
+            <a href="#kalkulator" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-xl font-medium transition shadow-md hover:shadow-lg">
+                Pesan Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Pernyataan Masalah & Solusi) -->
+    <section class="max-w-6xl mx-auto px-4 py-16 text-center md:text-left grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Solusi Tugas Sekolah</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 leading-tight">
+                Tugas Rapih, Nilai Maksimal, Tanpa Pusing.
+            </h1>
+            <p class="mt-4 text-gray-600 text-lg">
+                Punya materi tapi bingung bikin slide PPT aesthetic? Atau pusing atur format makalah & daftar pustaka? Kami bantu selesaikan dalam hitungan jam!
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#kalkulator" class="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-700 transition text-center">
+                    Cek Estimasi Biaya
+                </a>
+                <a href="#portofolio" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition text-center">
+                    Lihat Contoh
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-gradient-to-tr from-indigo-500 to-purple-500 p-1 rounded-2xl shadow-2xl w-full max-w-md">
+                <div class="bg-white p-6 rounded-xl text-left space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                    <p class="text-sm text-gray-500 border-b pb-2">Status Pengerjaan Tugas Hari Ini</p>
+                    <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
+                        <span class="text-sm font-medium">Presentasi Sosiologi</span>
+                        <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">Selesai (100%)</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg">
+                        <span class="text-sm font-medium">Format Makalah TIK</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">Proses Edit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR & KEUNGGULAN -->
+    <section id="fitur" class="bg-white py-16 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">Mengapa Memilih TugasBeres?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">⚡</div>
+                    <h3 class="font-bold text-lg mb-2">Pengerjaan Cepat</h3>
+                    <p class="text-gray-600 text-sm">Bisa pengerjaan ekspres 3-6 jam untuk kebutuhan tugas yang mendesak.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🎨</div>
+                    <h3 class="font-bold text-lg mb-2">Desain Kustom & Aesthetic</h3>
+                    <p class="text-gray-600 text-sm">Slide dan dokumen dibuat rapi sesuai kriteria penilai akademis/guru.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">💰</div>
+                    <h3 class="font-bold text-lg mb-2">Harga Kantong Pelajar</h3>
+                    <p class="text-gray-600 text-sm">Tarif transparan mulai dari Rp 5.000 tanpa biaya tersembunyi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR BIAYA & ORDER (INTERAKTIF JS) -->
+    <section id="kalkulator" class="py-16 max-w-4xl mx-auto px-4">
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+            <h2 class="text-2xl font-bold text-center mb-2">Kalkulator Estimasi Biaya</h2>
+            <p class="text-center text-gray-500 text-sm mb-8">Hitung sendiri estimasi biaya dan langsung hubungi kami via WhatsApp.</p>
+
+            <form id="orderForm" class="space-y-6">
+                <!-- Input Nama -->
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama kamu" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <!-- Input Layanan -->
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Pilih Jenis Layanan</label>
+                    <select id="layanan" onchange="hitungTotal()" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="5000">Format Makalah / Rapikan Dokumen (Rp 5.000 / lembar)</option>
+                        <option value="8000">Desain Slide PPT / Canva (Rp 8.000 / slide)</option>
+                        <option value="15000">Pembuatan Infografis / Poster (Rp 15.000 / desain)</option>
+                    </select>
+                </div>
+
+                <!-- Input Jumlah -->
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Jumlah Halaman / Slide / Desain</label>
+                    <input type="number" id="jumlah" value="1" min="1" oninput="hitungTotal()" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <!-- Total Harga Ringkasan -->
+                <div class="bg-indigo-50 p-4 rounded-2xl flex justify-between items-center">
+                    <span class="font-medium text-indigo-900">Total Estimasi:</span>
+                    <span id="totalHarga" class="text-2xl font-extrabold text-indigo-600">Rp 5.000</span>
+                </div>
+
+                <!-- Tombol Order WA -->
+                <button type="button" onclick="kirimKeWA()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center space-x-2">
+                    <span>Pesan via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 text-center text-sm">
+        <p>© 2026 TugasBeres - Prototipe Bisnis Digital TIK SMA.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Nomor WhatsApp tujuan (Ganti dengan nomor WA kamu, sertakan kode negara 62)
+        const NOMOR_WA = "6281234567890";
+
+        function hitungTotal() {
+            const hargaLayanan = parseInt(document.getElementById('layanan').value) || 0;
+            const jumlah = parseInt(document.getElementById('jumlah').value) || 1;
+            
+            const total = hargaLayanan * jumlah;
+            
+            // Format ke Rupiah
+            document.getElementById('totalHarga').innerText = "Rp " + total.toLocaleString('id-ID');
+            return total;
+        }
+
+        function kirimKeWA() {
+            const nama = document.getElementById('nama').value.trim();
+            const layananSelect = document.getElementById('layanan');
+            const namaLayanan = layananSelect.options[layananSelect.selectedIndex].text;
+            const jumlah = document.getElementById('jumlah').value;
+            const total = hitungTotal();
+
+            if (!nama) {
+                alert("Silakan isi nama kamu terlebih dahulu!");
+                return;
+            }
+
+            // Pesan terformat untuk WhatsApp
+            const pesan = `Halo Admin TugasBeres! Saya mau order jasa:%0A%0A` +
+                          `• *Nama*: ${encodeURIComponent(nama)}%0A` +
+                          `• *Layanan*: ${encodeURIComponent(namaLayanan)}%0A` +
+                          `• *Jumlah*: ${jumlah}%0A` +
+                          `• *Total Estimasi*: Rp ${total.toLocaleString('id-ID')}%0A%0A` +
+                          `Mohon konfirmasi pengerjaan dan detail selanjutnya. Terima kasih!`;
+
+            // Buka link WA
+            const urlWA = `https://wa.me/${085736445786}?text=${pesan}`;
+            window.open(urlWA, '_blank');
+        }
+    </script>
+</body>
+</html>
